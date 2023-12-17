@@ -1,0 +1,95 @@
+* {
+    margin: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-principal: 'Arial, Helvetica, sans-serif';
+}
+
+body {
+    width: 1440px;
+    height: 2491px;
+    margin: 0 auto;
+}
+
+.banner {
+    Width: 1440px;
+    Height: 605px;
+    border-bottom: 1px solid;
+    border-color: #69bcf3;
+}
+
+.banner-content {
+    Width: 510px;
+    Height: 393px;
+    position: relative;
+    top: 56px;
+    left: 465px;
+    gap: 16px;
+}
+
+.logo {
+    Width: 268px;
+    Height: 268px;
+    position: relative;
+    top: 0px;
+    left: 131px;
+    background-color: #000000;
+    background-blend-mode: difference;
+}
+
+.logo img {
+    Width: 248px;
+    Height: 214px;
+    position: relative;
+    top: 27px;
+    left: 10px;
+}
+
+.banner-content h1 {
+    width: inherit;
+    height: 40px;
+    font-family: var(--font-principal);
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 46.96px;
+    color: #1472B7;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.banner-content p {
+    width: inherit;
+    height: 46px;
+    font-family: var(--font-principal);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.48px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.banner-content button {
+    width: 326px;
+    height: 57px;
+    position: fixed;
+    top: 473px;
+    left: 1030px;
+    padding: 19px, 91px, 19px, 91px;
+    gap: 31px;
+    border: 2px solid white;
+    background-color: blue;
+
+    /* FONT */
+    font-family: var(--font-principal);
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 18.78px;
+    letter-spacing: 21%;
+    color: #31A8DD;
+    text-align: center;
+    text-transform: uppercase;
+}
+
