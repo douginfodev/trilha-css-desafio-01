@@ -124,21 +124,6 @@ h2 {
     gap: 24px;
 }
 
-/*  
-#course-content h2 {
-    font-family: var(--font-principal);
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 37.57px;
-    letter-spacing: 19%;
-    color: #33A8DB;
-    text-align: center;
-    text-transform: uppercase;
-    width: inherit;
-    height: 38px;
-    margin-bottom: var(--spacing-bottom);
-}*/
-
 #course-content p,
 .module-list p,
 footer p {
@@ -200,7 +185,6 @@ footer p {
     height: 363px;
     position: absolute;
     top: 1048px;
-    border: 1px solid #33A8DB;   
     background-color: none;
 }
 
@@ -225,15 +209,57 @@ footer p {
 #professional-challenges{
     width: 1440px;
     height: 363px;
-    top: 1138px;
+    position: absolute;
+    top: 1453px;
     border: 1px 19x 19x 0px;
-    border: 1px solid #33A8DB; 
 }
+
+#professional-challenges h2{
+    height: 76px;
+    top: 1577px;
+    left: 600px;
+
+     font-size: 32px;
+     font-weight: 700;
+     line-height: 37.57px;
+     letter-spacing: 19%;
+     color: #FFFFFF;
+     text-align: center;
+}
+
+#professional-challenges img{
+    width: 659px;
+    height: 429px;
+    position: relative;
+    top: 10px;
+    left: 395px;
+    margin-bottom: var(--spacing-bottom);
+}
+
+#professional-challenges p{
+    width: 792px;
+    height: 76px;
+    text-align: center;  
+    position: relative; 
+    left: 324px;
+    
+     /* FONT */
+     font-family: var(--font-principal);
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 18.78px;
+     color: #FFFFFF;
+     text-align: center;
+}
+
+
 
 /* FOOTER */
 footer {
     width: 1440px;
     height: 750px;
+    position: absolute;
+    top: 2100px;
     border-top: 1px solid #33A8DB;
 }
 
