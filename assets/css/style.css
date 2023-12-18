@@ -12,11 +12,14 @@
 }
 
 body {
+    margin: 0 auto;
     width: 1440px;
-    height: 2491px;
+    height: 1800px;
     top: -225px;
     left: 709px;
+    background-color: black;
     margin-bottom: var(--spacing-bottom);
+    
 }
 
 h2 {
@@ -30,15 +33,18 @@ h2 {
     text-transform: uppercase;
     width: inherit;
     height: 38px;
-    margin-bottom: var(--spacing-bottom);
+    margin-bottom: 24px;
 }
 
 .banner {
-    Width: 1440px;
-    Height: 605px;
-    border-bottom: 1px solid;
-    border-color: #69bcf3;
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)), url('../images/banner.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    padding-top: 60px;
+    border-bottom: 1px solid #33A8DB80;
 }
+
 
 .banner-content {
     Width: 510px;
@@ -55,16 +61,16 @@ h2 {
     position: relative;
     top: 0px;
     left: 131px;
-    background-color: #000000;
-    background-blend-mode: difference;
+    background-color: rgba(0, 0, 0, .2);
+    border-radius: 50%;
+    padding: 16px;
 }
 
 .logo img {
-    Width: 248px;
-    Height: 214px;
-    position: relative;
-    top: 27px;
-    left: 10px;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .banner-content h1 {
@@ -77,6 +83,10 @@ h2 {
     color: #1472B7;
     text-align: center;
     text-transform: uppercase;
+    color: transparent;
+    background: -webkit-linear-gradient(#33A8DB, #1472B7);
+    background-clip: text;
+    -webkit-background-clip: text;
     margin-bottom: var(--spacing-bottom);
 }
 
@@ -101,7 +111,6 @@ h2 {
     padding: 19px, 91px, 19px, 91px;
     gap: 31px;
     border: 2px solid white;
-    background-color: blue;
 
     /* FONT */
     font-family: var(--font-principal);
@@ -112,16 +121,34 @@ h2 {
     color: #31A8DD;
     text-align: center;
     text-transform: uppercase;
+
+    background-color: transparent;
+    border-image: linear-gradient(#3BA1CD, #1572B7);
+    border-image-slice: 10;
+    border-radius: 30px;
 }
 
 /* MAIN */
+
+section {
+    margin: 100px auto;
+}
+
+main{
+    margin: 0 auto;
+    height: auto;
+}
+
 #course-content {
     Width: 792px;
     Height: 325px;
-    position: absolute;
-    top: 723px;
-    left: 324px;
+
     gap: 24px;
+    margin-bottom: 24px;
+}
+
+.module-list {
+    margin: 24px 0;
 }
 
 #course-content p,
@@ -146,10 +173,9 @@ footer p {
     border: 1px solid #33A8DB;
     border-radius: 57px;
     position: relative;
-    left: 145px;
+    left: 30px;
     padding: 19px, 127px, 16px, 127px;
     gap: 10px;
-    background-color: #33A8DB;
     color: #FFFFFF;
     font-family: var(--font-principal);
     font-size: 16px;
@@ -157,6 +183,12 @@ footer p {
     /* line-height: 18.78px; */
     text-align: center;
     vertical-align: bottom;
+
+    margin: 0 auto 8px;
+
+    background-color: #252525;
+    padding: 16px;
+    box-shadow: inset -5px 6px 8px rgba(0, 0, 0, .7);
 }
 
 .module span {
@@ -177,79 +209,87 @@ footer p {
 
 .module3 {
     top: 60px;
+    margin-bottom: 24px;
 }
 
 /* transform-world */
-#transform-world{
+#transform-world {
     width: 1440px;
     height: 363px;
     position: absolute;
-    top: 1048px;
-    background-color: none;
+    top: 1128px;
+    background-size: cover;
+    background-image: url("../images/woman-code.png");
+    background-attachment: fixed;
+    border-top: 1px solid #33A8DB80;
+    border-bottom: 1px solid #33A8DB80;
+    padding: 200px;
 }
 
-#transform-world p{
+#transform-world p {
     width: 244px;
     height: 141px;
     position: relative;
-    top: 111px;
-    left: 198px;
-    
-     /* FONT */
-     font-family: var(--font-principal);
-     font-size: 40px;
-     font-weight: 900;
-     line-height: 46.96px;
-     color: #FFFFFF;
-     text-align: center;
-     text-transform: uppercase;
+    top: -100px;
+    left: 0px;
+
+    /* FONT */
+    font-family: var(--font-principal);
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 46.96px;
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: lowercase;
+    max-width: 250px;
+    text-shadow: 3px 2px #33A8DB;
 }
 
 /* professional-challenges */
-#professional-challenges{
+#professional-challenges {
     width: 1440px;
     height: 363px;
     position: absolute;
-    top: 1453px;
+    top: 1600px;
     border: 1px 19x 19x 0px;
 }
 
-#professional-challenges h2{
+#professional-challenges h2 {
     height: 76px;
     top: 1577px;
     left: 600px;
 
-     font-size: 32px;
-     font-weight: 700;
-     line-height: 37.57px;
-     letter-spacing: 19%;
-     color: #FFFFFF;
-     text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37.57px;
+    letter-spacing: 19%;
+    color: #FFFFFF;
+    text-align: center;
 }
 
-#professional-challenges img{
+#professional-challenges img {
     width: 659px;
     height: 429px;
     position: relative;
     top: 10px;
     left: 395px;
-    margin-bottom: var(--spacing-bottom);
+    margin: 32px 0;
 }
 
-#professional-challenges p{
+#professional-challenges p {
     width: 792px;
     height: 76px;
-    text-align: center;  
-    position: relative; 
+    text-align: center;
+    position: relative;
     left: 324px;
-    
-     /* FONT */
-     font-family: var(--font-principal);
-     font-size: 16px;
-     font-weight: 400;
-     line-height: 18.78px;
-     color: #FFFFFF;
-     text-align: center;
+
+    /* FONT */
+    font-family: var(--font-principal);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.78px;
+    color: #FFFFFF;
+    text-align: center;
 }
 
 
@@ -257,27 +297,29 @@ footer p {
 /* FOOTER */
 footer {
     width: 1440px;
-    height: 750px;
+    height: 150px;
     position: absolute;
-    top: 2100px;
-    border-top: 1px solid #33A8DB;
+    top: 2400px;
+    border-top: 1px solid #33A8DB80;
+    padding: 60px 0;
+    text-align: center;
+    background-image: linear-gradient(rgba(50, 168, 219, .0), rgba(50, 168, 219, .2));
 }
 
 .dio-logo {
     width: 310px;
-    position: relative;
-    top: 59px;
-    left: 565px;
+    
 }
 
 footer p {
     width: inherit;
     position: relative;
-    top: 60px;
+    top: 0px;
 }
 
 a:link,
 a:hover,
 a:visited {
+    text-decoration: none;
     color: #31A8DD
 }
