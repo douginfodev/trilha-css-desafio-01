@@ -19,6 +19,20 @@ body {
     margin-bottom: var(--spacing-bottom);
 }
 
+h2 {
+    font-family: var(--font-principal);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37.57px;
+    letter-spacing: 19%;
+    color: #33A8DB;
+    text-align: center;
+    text-transform: uppercase;
+    width: inherit;
+    height: 38px;
+    margin-bottom: var(--spacing-bottom);
+}
+
 .banner {
     Width: 1440px;
     Height: 605px;
@@ -110,6 +124,7 @@ body {
     gap: 24px;
 }
 
+/*  
 #course-content h2 {
     font-family: var(--font-principal);
     font-size: 32px;
@@ -122,9 +137,9 @@ body {
     width: inherit;
     height: 38px;
     margin-bottom: var(--spacing-bottom);
-}
+}*/
 
-#course-content p, 
+#course-content p,
 .module-list p,
 footer p {
     font-family: var(--font-principal);
@@ -140,7 +155,7 @@ footer p {
 
 .module1,
 .module2,
-.module3{
+.module3 {
     Width: 535px;
     Height: 51px;
     border: 1px solid #33A8DB;
@@ -167,33 +182,69 @@ footer p {
     color: #33A8DB;
 }
 
-.module1{
+.module1 {
     top: 20px;
 }
 
-.module2{
+.module2 {
     top: 40px;
 }
 
-.module3{
+.module3 {
     top: 60px;
 }
 
+/* transform-world */
+#transform-world{
+    width: 1440px;
+    height: 363px;
+    position: absolute;
+    top: 1048px;
+    border: 1px solid #33A8DB;   
+    background-color: none;
+}
+
+#transform-world p{
+    width: 244px;
+    height: 141px;
+    position: relative;
+    top: 111px;
+    left: 198px;
+    
+     /* FONT */
+     font-family: var(--font-principal);
+     font-size: 40px;
+     font-weight: 900;
+     line-height: 46.96px;
+     color: #FFFFFF;
+     text-align: center;
+     text-transform: uppercase;
+}
+
+/* professional-challenges */
+#professional-challenges{
+    width: 1440px;
+    height: 363px;
+    top: 1138px;
+    border: 1px 19x 19x 0px;
+    border: 1px solid #33A8DB; 
+}
+
 /* FOOTER */
-footer{
+footer {
     width: 1440px;
     height: 750px;
     border-top: 1px solid #33A8DB;
 }
 
-.dio-logo{
+.dio-logo {
     width: 310px;
     position: relative;
     top: 59px;
     left: 565px;
 }
 
-footer p{
+footer p {
     width: inherit;
     position: relative;
     top: 60px;
@@ -201,8 +252,6 @@ footer p{
 
 a:link,
 a:hover,
-a:visited
-{
-    color:#31A8DD
+a:visited {
+    color: #31A8DD
 }
-
