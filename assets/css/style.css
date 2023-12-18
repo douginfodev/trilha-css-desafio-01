@@ -83,7 +83,7 @@ body {
     height: 57px;
     position: relative;
     top: 32px;
-    left: 171px;
+    left: 100px;
     padding: 19px, 91px, 19px, 91px;
     gap: 31px;
     border: 2px solid white;
@@ -125,7 +125,8 @@ body {
 }
 
 #course-content p, 
-.module-list p {
+.module-list p,
+footer p {
     font-family: var(--font-principal);
     font-size: 16px;
     font-weight: 400;
@@ -178,8 +179,30 @@ body {
     top: 60px;
 }
 
+/* FOOTER */
 footer{
     width: 1440px;
     height: 750px;
     border-top: 1px solid #33A8DB;
 }
+
+.dio-logo{
+    width: 310px;
+    position: relative;
+    top: 59px;
+    left: 565px;
+}
+
+footer p{
+    width: inherit;
+    position: relative;
+    top: 60px;
+}
+
+a:link,
+a:hover,
+a:visited
+{
+    color:#31A8DD
+}
+
