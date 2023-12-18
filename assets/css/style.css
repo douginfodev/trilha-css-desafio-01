@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
+
 * {
     margin: 0px;
     border: 0px;
@@ -5,13 +7,16 @@
 }
 
 :root {
-    --font-principal: 'Arial, Helvetica, sans-serif';
+    --font-principal: 'Raleway', sans-serif;
+    --spacing-bottom: 8px;
 }
 
 body {
     width: 1440px;
     height: 2491px;
-    margin: 0 auto;
+    top: -225px;
+    left: 709px;
+    margin-bottom: var(--spacing-bottom);
 }
 
 .banner {
@@ -58,6 +63,7 @@ body {
     color: #1472B7;
     text-align: center;
     text-transform: uppercase;
+    margin-bottom: var(--spacing-bottom);
 }
 
 .banner-content p {
@@ -69,14 +75,15 @@ body {
     line-height: 23.48px;
     color: #ffffff;
     text-align: center;
+    margin-bottom: var(--spacing-bottom);
 }
 
 .banner-content button {
     width: 326px;
     height: 57px;
-    position: fixed;
-    top: 473px;
-    left: 1030px;
+    position: relative;
+    top: 32px;
+    left: 171px;
     padding: 19px, 91px, 19px, 91px;
     gap: 31px;
     border: 2px solid white;
@@ -93,3 +100,86 @@ body {
     text-transform: uppercase;
 }
 
+/* MAIN */
+#course-content {
+    Width: 792px;
+    Height: 325px;
+    position: absolute;
+    top: 723px;
+    left: 324px;
+    gap: 24px;
+}
+
+#course-content h2 {
+    font-family: var(--font-principal);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37.57px;
+    letter-spacing: 19%;
+    color: #33A8DB;
+    text-align: center;
+    text-transform: uppercase;
+    width: inherit;
+    height: 38px;
+    margin-bottom: var(--spacing-bottom);
+}
+
+#course-content p, 
+.module-list p {
+    font-family: var(--font-principal);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.78px;
+    color: #FFFFFF;
+    text-align: center;
+    width: 792px;
+    height: 38px;
+    margin-bottom: var(--spacing-bottom);
+}
+
+.module1,
+.module2,
+.module3{
+    Width: 535px;
+    Height: 51px;
+    border: 1px solid #33A8DB;
+    border-radius: 57px;
+    position: relative;
+    left: 145px;
+    padding: 19px, 127px, 16px, 127px;
+    gap: 10px;
+    background-color: #33A8DB;
+    color: #FFFFFF;
+    font-family: var(--font-principal);
+    font-size: 16px;
+    font-weight: 400;
+    /* line-height: 18.78px; */
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.module span {
+    font-family: var(--font-principal);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.78px;
+    color: #33A8DB;
+}
+
+.module1{
+    top: 20px;
+}
+
+.module2{
+    top: 40px;
+}
+
+.module3{
+    top: 60px;
+}
+
+footer{
+    width: 1440px;
+    height: 750px;
+    border-top: 1px solid #33A8DB;
+}
